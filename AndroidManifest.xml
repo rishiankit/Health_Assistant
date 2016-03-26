@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.project.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.project.Second"
+            android:label="@string/title_activity_second"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.project.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.example.project.Third"
+            android:label="@string/title_activity_third"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.project.Breakfast"
+            android:label="@string/title_activity_breakfast"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.project.Lunch"
+            android:label="@string/title_activity_lunch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.project.Dinner"
+            android:label="@string/title_activity_dinner"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.project.Fourth"
+            android:label="@string/title_activity_fourth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.project.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.project.Credits"
+            android:label="@string/title_activity_credits" >
+        </activity>
+        <activity
+            android:name="com.example.project.DietPlan"
+            android:label="@string/title_activity_diet_plan" >
+        </activity>
+        <activity
+            android:name="com.example.project.Customer"
+            android:label="@string/title_activity_customer" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DietPlan" 
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Your Calorie Goal"
+        android:background="#831928"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+<LinearLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal" 
+  		android:layout_marginTop="25dp" 
+    	>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Weight : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="weight in Kgs"
+        android:text="0.0" 
+        android:textColor="#ff0000">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tick"
+         />
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Calories Required to Maintain weight"
+    android:layout_marginTop="12dp"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="To loose 1pound/week : cut 500 calories"
+    android:layout_marginTop="12dp"
+    android:textColor="#ff8000"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="A 1500 calorie Diet "
+    android:background="#831928"
+    android:textColor="#ffffff"
+    android:layout_marginTop="25dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    >
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BREAKFAST\n
+Banana Spice Smoothie
+(283 calories)\n\n
+MORNING SNACK\n
+1 slice whole-wheat bread spread with 2 Tbsp. part-skim ricotta, topped with 1 chopped dried fig and 1 tsp. honey
+(154 calories)\n\n
+LUNCH\n
+Power salad–Toss 2 cups lettuce, 1 cup chopped raw vegetables, 1 hard-boiled egg, 2 Tbsp. raisins and 2 Tbsp. almonds with 2 Tbsp. low-fat balsamic dressing
+(402 calories)\n\n
+AFTERNOON SNACK\n
+1 small apple and 22 pistachios
+(150 calories)\n\n
+DINNER\n
+Quinoa bowl–Stir-fry 1/2 cup diced extra-firm tofu and 1 cup diced broccoli and carrots in 2 tsp. canola oil. Stir in 1/2 tsp. sesame oil and 2 tsp. soy sauce. Serve over 1 cup cooked quinoa and top with 1 Tbsp. of peanuts
+(498 calories)"
+    
+    
+    
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:layout_marginTop="12dp" />
+</ScrollView>
+</LinearLayout>
